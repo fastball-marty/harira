@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'EBGaramond';
+  src: url('./EBGaramond.ttf') format('truetype');
+}
+
+body {
+  font-family: "EBGaramond", Times, serif;
+  background-color: #ffb7ce;
+  padding: 2em;
+}
+
+p, li {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1em;
+  padding-bottom: .2em;
+}
+
+.container {
+  display: flex;
+}
+
+#ingredients, #directions  {
+  width: 30%;
+  height: auto;
+  padding: 2em;
+}
+
+#footer {
+  text-align: right;
+  font-size: .75em;
+}
+
+
+/* Alt styling for mobile */
+@media screen and (max-width: 600px) {
+
+  .container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #ingredients, #directions {
+    width: 80%;
+    margin: 0 auto; 
+    padding: 0;
+  }
+}
